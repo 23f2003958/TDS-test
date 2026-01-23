@@ -1,0 +1,17 @@
+name: Test Action Exercise
+
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch: # Allows you to trigger it manually
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # This is the specific step you requested
+      - name: Step for 23f2003958@ds.study.iitm.ac.in
+        run: echo "Action triggered successfully"
